@@ -1,0 +1,13 @@
+[Unit]
+Description=reads a bmp280 sensor and sends results to a mqtt server
+Requires=mosquitto.service
+After=mosquitto.service
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/node /home/pi/node-projects/bmp280-service/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
