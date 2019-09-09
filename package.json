@@ -1,0 +1,15 @@
+{
+  "name": "bmp280-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nrbrt",
+  "license": "ISC",
+  "dependencies": {
+    "bme280-sensor": "^0.1.6",
+    "mqtt": "^3.0.0"
+  }
+}
